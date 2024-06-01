@@ -6,8 +6,8 @@ logging.getLogger('ultralytics').setLevel(logging.WARNING)
 
 class Jacket_detection():
     def __init__(self):
-        self._people_model = YOLO("./models/people.pt")
-        self._jacket_model = YOLO("./models/jacket.pt")
+        self._people_model = YOLO("./weights/people.pt")
+        self._jacket_model = YOLO("./weights/jacket.pt")
 
     def find_centers(self, boxes):
         centers = []
